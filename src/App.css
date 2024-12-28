@@ -1,0 +1,43 @@
+*{
+  background-color: black;
+}
+  
+
+.main{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 150px;
+  margin: 150px;
+}
+
+.card{
+  border: 3px solid; 
+  border-image: linear-gradient(to right, red, blue) 1;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  color: blueviolet;
+  height: 250px;
+  width: 250px;
+  animation: color-change 3s  infinite linear;
+  align-items: center;
+  padding: 20px;
+}
+.card:hover{
+  cursor: pointer;
+}
+.card>img{
+  height: 140px;
+  width: 140px;
+}
+
+
+@keyframes color-change {
+  0%{
+    border-image: linear-gradient(to right, red, blue) 1;
+  }
+  50%{
+    border-image: linear-gradient(to right, green, yellow) 1;
+  }
+}
+
